@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolioamiroh</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "person",
+          "name": "Amiroh",
+          "url": "https://portfolioamiroh.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/amrh96",
+            "https://github.com/Amrh49"
+          ],
+          "jobTitle": "front-end",
+          "worksFor": {
+            "@type": "EducationalOrganization",
+            "name": "universitas yatsi madani"
+          },
+          "knowsAbout": ["HTML5", "CSS", "Figma"],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "tangerang",
+            "addressRegion": "banten",
+            "addressCountry": "indonesia"
+          }
+        }
+        </script>        
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Halo, saya amiroh </h1>
+            <p>
+                Saya seorang pengembang web pemula yang tertarik dengan teknologi front-end dan desain pengalaman pengguna.
+            </p>
+        </div>
+        <div class="home-image">
+            <img src="robot1.png" alt="robot_hello">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="About-container">
+            <div class="image">
+                <img src="profil1.png" alt="foto_profil">
+            <div class="aboutme">
+                <h2>About</h2>
+                <p>
+                    Saya amiroh, mahasiswi ilmu komputer universitas yatsi madani, saya seorang pemula yang sedang mempelajari pengembangan web dan antarmuka pengguna serta pengalaman pengguna (UI UX).
+                    Selain belajar mandiri, dari kampus, dan dari komunitas teknologi, saya juga aktif mengikuti berbagai webinar, kursus online, dan bootcamp untuk mengasah kemampuan programming saya, serta mengeksplorasi keterampilan baru.
+                </p>
+                <a href="https://amrh49.github.io/portfolio/" class="tombol_sertifikat" target="_blank">Lihat semua sertifikat</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="project-section">
+        <h2>Project</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="UI UX.png" alt="UX/UI Project">
+                <button class="button" onclick="showProject('uxui')">Belum Tersedia</button>
+            </div>
+            <div class="project-card" id="gambarcode">
+                <img src="CODE.png" alt="Coding Project">
+                <button class="button" onclick="showProject('coding')">Belum Tersedia</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-container">
+        <div class="form-section">
+            <h2>Contact</h2>
+            <p>What’s Up?</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Name*" required>
+                <input type="email" name="email" placeholder="Email address*" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <textarea name="message" rows="4" placeholder="Enter Your Massage" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div style="margin-bottom: 20px;">
+            <!-- Social Media Icons -->
+            <a href="https://www.linkedin.com/in/amrh96" style="margin-right: 15px;">
+              <img src="logo ln.png" alt="Email" style="width: 30px;">
+            </a>
+            <a href="https://www.instagram.com/am_myrh96" target="_blank" style="margin-right: 15px;">
+              <img src="logo instagram.png" alt="Instagram" style="width: 30px;">
+            </a>
+            <a href="https://github.com/Amrh49" target="_blank" style="margin-right: 15px;">
+              <img src="logo github.png" alt="github" style="width: 35px;">
+            </a>
+          </div>
+          <div style="margin-bottom: 10px;">
+            <!-- Contact Details -->
+            <p style="margin: 0;">Created by Amiroh | +6285881812588</p>
+          </div>
+          <div>
+            <!-- Copyright -->
+            <p style="margin: 0; font-size: 14px;">&copy;  Copyright 2024 </p>
+          </div>
+    </footer>
+
+<script src="scriptporto.js"></script>
+</body>
+</html>
